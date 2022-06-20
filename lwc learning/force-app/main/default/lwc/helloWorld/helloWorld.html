@@ -1,4 +1,16 @@
+<!-- sldsValidatorIgnore -->
 <template>
-    <div>{fullname}</div>
-    <h4>{object.name}</h4>
+    <!-- <div>{fullname}</div>
+    <h4>{object.name}</h4> -->
+    <!-- 
+        you can't do this for array
+        <div>{user[2]}</div>
+     -->
+
+     <lightning-card  title="Two way data binding">
+        <div class="slds-var-m-around_medium">
+        <lightning-input type="text" onkeyup={changeHandler} label="Enter some text"></lightning-input>
+        <div>{fullname} is a course of {title}</div>
+        </div>
+    </lightning-card>
 </template>
